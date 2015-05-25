@@ -1,7 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<style>
+#fuel 
+    {
+        background-image: url('/C:/Users/Sin Lim/Documents/Projects/Website/dschu21.github.io/img/fuelcellback.jpeg');
+        background-size:100% 100%;
+        background-repeat: no-repeat;
+        -webkit-filter: grayscale(0.75);
+        -webkit-filter: sepia(0.75);
+    }
+#solarcar
+{
+    background-image: url('/C:/Users/Sin Lim/Documents/Projects/Website/dschu21.github.io/img/solarcar.jpg');
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    -webkit-filter: grayscale(0.25);
+    -webkit-filter: sepia(0.25);
+}
+#organizations
+{
+    <!--
+     -webkit-column-count: 3;
+        column-count: 3;
+        -->
+}
+</style>
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -101,12 +130,13 @@
         </div>
     </header>
 
+
     <!-- Mechatronics Section -->
     <section id="mechatronics" class="container content-section text-center">
+
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                
-                <h2>Mechatonics</h2>
+            <div class="col-md-8 col-md-offset-2">
+                <h2>Mechatronics</h2>
                 <p>Mechatronics projects here </p>
 
                 <a href="#fuel" class="page-scroll">
@@ -118,10 +148,9 @@
     </section>
 
     <!-- Fuel Cell Car  Section -->
-    <section id="fuel" class="container content-section text-center">
+     <section id="fuel" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                
                 <h2>Hydrogen Fuel Cell Car</h2>
 
                 <a href="#guitar" class="page-scroll">
@@ -130,7 +159,8 @@
                 </a>
             </div>
         </div>
-    </section>
+
+    </section> 
 
      <!-- Automated Guitar Section -->
     <section id="guitar" class="container content-section text-center">
@@ -208,22 +238,39 @@
             </div>
         </div>
     </section>
-S
     
     <!-- Organizations Section -->
     <section id="organizations" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Organizations</h2>
+
+        <!--<div class="row">
+            <div class="col-lg-8 col-lg-offset-2">-->
+        <div class="tabBox">
+              <ul class="tabs">
+                <li><a href="#solar-descrip">Description</a></li>
+                <li><a href="#solar-gall">Gallery</a></li>
+
+              </ul>
+             
+              <div class="tabContainer">
+                <div id="solar-descrip" class="tabContent">
+            
+                </div>
+                 
+                <div id="solar-gall" class="tabContent">
+                  
+                </div>
+              </div>
+        </div> 
+               <!-- <h2>Organizations</h2>
                 <p>Teams and stuff Eg. MSSC, UW Varsity Swim</p>
                 <a href="#solarcar" class="page-scroll">
                     <p> See organizations </p>
                     <i class="fa fa-angle-double-down animated"></i>
-                </a>
-                </ul>
-            </div>
-        </div>
-    </section>
+                </a>-->
+                
+          <!--  </div>
+        </div>   -->
+ </section>
 
     <!-- Midnight Sun Solar Team Section -->
     <section id="solarcar" class="container content-section text-center">
@@ -246,7 +293,7 @@ S
             <div class="col-lg-8 col-lg-offset-2">
                 
                 <h2>Varsity Swim Team</h2>
-                <p> Home Automation </p>
+                <p> Tihanyi Divisional Champions </p>
                 <a href="#outersclub" class="page-scroll">
                     <p> Next Organization </p>
                     <i class="fa fa-angle-double-down animated"></i>
@@ -319,6 +366,20 @@ S
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
 
-</body>
+    <script type="text/javascript">
+  $(".tabContent").hide(); 
+  $("ul.tabs li:first").addClass("active").show(); 
+  $(".tabContent:first").show(); 
+ 
+  $("ul.tabs li").click(function () {
+    $("ul.tabs li").removeClass("active"); 
+    $(this).addClass("active"); 
+    $(".tabContent").hide(); 
+    var activeTab = $(this).find("a").attr("href"); 
+    $(activeTab).fadeIn(); 
+    return false;
+  });
+</script>
 
+</body>
 </html>

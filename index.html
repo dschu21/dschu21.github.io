@@ -2,22 +2,68 @@
 <html lang="en">
 
 <style>
+
 #fuel 
-    {
-        background-image: url('/C:/Users/Sin Lim/Documents/Projects/Website/dschu21.github.io/img/fuelcellback.jpeg');
-        background-size:100% 100%;
-        background-repeat: no-repeat;
-        -webkit-filter: grayscale(0.75);
-        -webkit-filter: sepia(0.75);
-    }
+{
+        /*background-image: url('/C:/Users/Sin Lim/Documents/Projects/Website/dschu21.github.io/img/fuelcellback.jpeg'); */
+    width: 100%; 
+    background-color: black;
+    color:white;
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    -webkit-filter: grayscale(0.75);
+    -webkit-filter: sepia(0.75);
+
+
+} 
+#guitar
+{
+    width: 100%; 
+    background-color: CadetBlue;
+    color:black;
+}
+#maestro
+{
+    width: 100%; 
+    background-color: IndianRed;
+    color:white;
+}
+#run
+{
+    width: 100%; 
+    background-color: LightGray;
+    color:black;
+}
+#scanner
+{
+    width: 100%; 
+    background-color: CadetBlue;
+    color:white;
+}
 #solarcar
 {
-    background-image: url('/C:/Users/Sin Lim/Documents/Projects/Website/dschu21.github.io/img/solarcar.jpg');
+    /* background-image: url('/C:/Users/Sin Lim/Documents/Projects/Website/dschu21.github.io/img/solarcar.jpg'); */
+    width: 100%; 
+    background-color: IndianRed;
+    color:black;
     background-size:100% 100%;
     background-repeat: no-repeat;
     -webkit-filter: grayscale(0.25);
     -webkit-filter: sepia(0.25);
 }
+#swimteam
+{
+    width: 100%; 
+    background-color: black;
+    color:white; 
+}
+#outers
+{
+    width: 100%; 
+    background-color: CadetBlue;
+    color:black;
+}
+
 #organizations
 {
     <!--
@@ -25,10 +71,27 @@
         column-count: 3;
         -->
 }
+#contacts
+{
+    width: 100%; 
+    background-color: IndianRed;
+    color:white;
+}
+#right
+{
+    position: relative;
+    left:150px;
+    bottom: 350px;
+}
+#left
+{
+    position: relative;
+    right:150px;
+    bottom: 350px;
+}
 </style>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
@@ -95,13 +158,13 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#mechatronics">Mechatronics</a>
+                        <a class="page-scroll" href="#fuel">Mechatronics</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#ventures">Ventures</a>
+                        <a class="page-scroll" href="#maestro">Ventures</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#organizations">Organizations</a>
+                        <a class="page-scroll" href="#solarcar">Organizations</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contacts">Contacts</a>
@@ -121,7 +184,7 @@
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="brand-heading">DANYON CHU</h1>
                         <h2 class="intro-text">Designer Engineer Athlete</h2>
-                        <a href="#mechatronics" class="btn btn-circle page-scroll">
+                        <a href="#fuel" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
                     </div>
@@ -130,30 +193,24 @@
         </div>
     </header>
 
-
-    <!-- Mechatronics Section -->
-    <section id="mechatronics" class="container content-section text-center">
-
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h2>Mechatronics</h2>
-                <p>Mechatronics projects here </p>
-
-                <a href="#fuel" class="page-scroll">
-                    <p> See Projects </p>
-                    <i class="fa fa-angle-double-down animated"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
     <!-- Fuel Cell Car  Section -->
      <section id="fuel" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Hydrogen Fuel Cell Car</h2>
+                    <div class="tabBox">
+                        <ul class="tabs">
+                            <li><a href="#solar-gallery">Gallery</a></li>
 
-                <a href="#guitar" class="page-scroll">
+                        </ul>
+                        <div class="tabContainer">
+                            <div id="solar-gallery" class="tabContent"> </div>
+                        </div>
+                    </div> 
+                    <div id="right">
+                        <p> Some description stuff. </p>
+                    </div>
+                    <a href="#guitar" class="page-scroll">
                     <p> Next Project </p>
                     <i class="fa fa-angle-double-down animated"></i>
                 </a>
@@ -168,27 +225,10 @@
             <div class="col-lg-8 col-lg-offset-2">
                 
                 <h2>Automated Guitar</h2>
-
                 <a href="#ventures" class="page-scroll">
                     <p> Ventures section </p>
                     <i class="fa fa-angle-double-down animated"></i>
                 </a>
-            </div>
-        </div>
-    </section>
-
-<!-- Projects Section -->
-    <section id="ventures" class="content-section text-center">
-        <div class="row">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Ventures</h2>
-                    <p>Personal projects here</p>
-                    <a href="#maestro" class="page-scroll">
-                    <p> See projects </p>
-                    <i class="fa fa-angle-double-down animated"></i>
-                </a>
-                </div>
             </div>
         </div>
     </section>
@@ -238,39 +278,6 @@
             </div>
         </div>
     </section>
-    
-    <!-- Organizations Section -->
-    <section id="organizations" class="container content-section text-center">
-
-        <!--<div class="row">
-            <div class="col-lg-8 col-lg-offset-2">-->
-        <div class="tabBox">
-              <ul class="tabs">
-                <li><a href="#solar-descrip">Description</a></li>
-                <li><a href="#solar-gall">Gallery</a></li>
-
-              </ul>
-             
-              <div class="tabContainer">
-                <div id="solar-descrip" class="tabContent">
-            
-                </div>
-                 
-                <div id="solar-gall" class="tabContent">
-                  
-                </div>
-              </div>
-        </div> 
-               <!-- <h2>Organizations</h2>
-                <p>Teams and stuff Eg. MSSC, UW Varsity Swim</p>
-                <a href="#solarcar" class="page-scroll">
-                    <p> See organizations </p>
-                    <i class="fa fa-angle-double-down animated"></i>
-                </a>-->
-                
-          <!--  </div>
-        </div>   -->
- </section>
 
     <!-- Midnight Sun Solar Team Section -->
     <section id="solarcar" class="container content-section text-center">
@@ -294,7 +301,7 @@
                 
                 <h2>Varsity Swim Team</h2>
                 <p> Tihanyi Divisional Champions </p>
-                <a href="#outersclub" class="page-scroll">
+                <a href="#outers" class="page-scroll">
                     <p> Next Organization </p>
                     <i class="fa fa-angle-double-down animated"></i>
                 </a>
@@ -303,7 +310,7 @@
     </section>
 
     <!-- Outers Club Section -->
-    <section id="outersclub" class="container content-section text-center">
+    <section id="outers" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 

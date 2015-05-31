@@ -27,6 +27,8 @@ height: 32px;
 line-height: 32px; 
 overflow: hidden;
 position: relative;
+right: 150px;
+
 }
   
 ul.tabs li a {
@@ -42,9 +44,11 @@ border-top: none;
 overflow: hidden;
 clear: both;
 float: left;
-width:99.9%;
+width:60%;
 min-height:250px;
 margin-bottom:10px;
+position: relative;
+right: 150px;
 }
   
 .tabContent {
@@ -70,7 +74,7 @@ border-top-left-radius:5px;
 }
   
 ul.tabs li {
-  background: black;
+  background: black;/* change based on background colour*/
 }
   
 ul.tabs li a {
@@ -89,7 +93,7 @@ padding-bottom: 1vw;
 }
   
 ul.tabs li a:hover {
-background: #eee;
+/*background: #eee;*/
 }
   
 ul.tabs li.active {
@@ -113,8 +117,11 @@ div.tabContainer {
 border-bottom:1px solid #ccc;
 border-left:1px solid #ccc;
 border-right:1px solid #ccc;
-background: white;
-color: black;
+border-top:1px solid #ccc;
+background: black;
+color: white;
+opacity: 0.9;
+min-height:400px;
 }
 
 @media only screen and (max-width: 767px) {

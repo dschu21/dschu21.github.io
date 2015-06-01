@@ -80,15 +80,35 @@
 #right
 {
     position: relative;
-    left:150px;
-    bottom: 350px;
+    left:475px;
+    bottom: 440px;
+    text-align: justify;
+    font-family: Papyrus;
+    
 }
 #left
 {
     position: relative;
     right:150px;
-    bottom: 350px;
+    bottom: 440px;
+    text-align: justify;
+    font-family: Papyrus;
 }
+#rightT
+{
+    position: relative;
+    left:108px;
+    bottom: 415px;
+    color: blue;
+}
+#leftT
+{
+    position: relative;
+    right:100px;
+    bottom: 415px;
+}
+
+
 </style>
 <head>
 
@@ -207,9 +227,18 @@
                             <div id="solar-gallery" class="tabContent"> </div>
                         </div>
                     </div> 
+                    
+                        <h3 id="rightT" style="color:blue">Summary</h3>
+                    
                     <div id="right">
-                        <p> Some description stuff. </p>
+                        <p class="blocktext" style="width: 30em"> The fuel cell car was designed to be an energy 
+                            efficient autonomous vehicle that is able to navigate through an arbitrary white course 
+                            marked with black guide lines. Optimization of the car included efficient algorithms to 
+                            make well-informed decisions on forks and dead-ends, dynamic car designs, and proper 
+                            cell maintenance.</p>
                     </div>
+                    <h3 id="rightT"  STYLE="position:relative; bottom:450px; left:75px;">Tech</h3>
+
                     <a href="#guitar" class="page-scroll">
                     <p> Next Project </p>
                     <i class="fa fa-angle-double-down animated"></i>

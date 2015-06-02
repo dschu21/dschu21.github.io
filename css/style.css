@@ -27,6 +27,7 @@ height: 32px;
 line-height: 32px; 
 overflow: hidden;
 position: relative;
+bottom:155px;
 right: 150px;
 
 }
@@ -48,6 +49,7 @@ width:60%;
 min-height:250px;
 margin-bottom:10px;
 position: relative;
+bottom:155px;
 right: 150px;
 }
   
@@ -121,7 +123,7 @@ border-top:1px solid #ccc;
 background: black;
 color: white;
 opacity: 0.9;
-min-height:400px;
+min-height:500px;
 }
 
 @media only screen and (max-width: 767px) {

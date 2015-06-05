@@ -80,8 +80,8 @@
 #right
 {
     position: relative;
-    left:475px;
-    bottom: 695px;
+    left:33vw;
+    bottom: 115vh;
     text-align: justify;
     font-family: Papyrus;
     
@@ -89,24 +89,25 @@
 #left
 {
     position: relative;
-    right:150px;
-    bottom: 595px;
+    right:33vw;
+    bottom: 115vh;
     text-align: justify;
     font-family: Papyrus;
 }
 #rightT
 {
     position: relative;
-    left:121px;
-    bottom: 675px;
-    font-size: 30px;
-    color: blue;
+    left:6.75vw;
+    bottom: 112vh;
+    font-size: 200%;
+    
 }
 #leftT
 {
     position: relative;
-    right:121px;
-    bottom: 570px;
+    right:13vh;
+    bottom: 112vh;
+    font-size: 200%;
 }
 
 
@@ -217,7 +218,7 @@
      <section id="fuel" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2 style="position:relative;bottom:175px;">Hydrogen Fuel Cell Car</h2>
+                <h2 style="position:relative;bottom:30vh;">Hydrogen Fuel Cell Car</h2>
                     <div class="tabBox">
                         <ul class="tabs">
                             <li><a href="#solar-gallery">Gallery</a></li>
@@ -228,7 +229,7 @@
                         </div>
                     </div> 
                     
-                        <h3 id="rightT" style="color:blue">Summary</h3>
+                        <h3 id="rightT" style="color:blue;">Summary</h3>
                     
                     <div id="right">
                         <p class="blocktext" style="width: 30em"> The fuel cell car was designed to be an energy 
@@ -237,14 +238,14 @@
                             make well-informed decisions on forks and dead-ends, dynamic car designs, and proper 
                             cell maintenance.</p>
                     </div>
-                    <h3 id="rightT"  STYLE="position:relative; bottom:710px; left:80px;">Tech</h3>
+                    <h3 id="rightT"  STYLE="position:relative; bottom:118vh; left:4vw; color:blue;">Tech</h3>
                     <div id="right">
-                        <div style="text-decoration:underline;font-size:25px;position:relative;bottom:33px;">Components:</br></div>
+                        <div style="text-decoration:underline;font-size:175%;position:relative;bottom:6vh;">Components:</br></div>
                         <p class="blocktext" style="width: 30em;position:relative;bottom:28px;">TI MSP430 microcontroller </t>
                             • Pololu 6V motor driver </t>• Two hydrogen fuel cells </br>• QTR-1A Reflectance Sensors </t>
                             • DC motors </t>• Touch sensors
                         </p>   
-                        <div style="text-decoration:underline;font-size:25px;position:relative;bottom:48px;">Software:</br></div>
+                        <div style="text-decoration:underline;font-size:175%;position:relative;bottom:7vh;">Software:</br></div>
                         <p style="position:relative;bottom:38px">C++ </t> • IAR embedded workbench</p>
  
                     </div>
@@ -263,7 +264,57 @@
             <div class="col-lg-8 col-lg-offset-2">
                 
                 <h2 style="position:relative;bottom:175px;">Automated Guitar</h2>
-                <a href="#ventures" class="page-scroll">
+                
+                    <div class="tabBox">
+                        <ul class="tabs">
+                            <li><a href="#solar-gallery">Gallery</a></li>
+
+                        </ul>
+                        <div class="tabContainer">
+                            <div id="solar-gallery" class="tabContent"> </div>
+                        </div>
+                    </div> 
+                        <ul class="slides">
+                        <input type="radio" name="radio-btn" id="img-1" checked />
+                        <li class="slide-container">
+                            <div class="slide">
+                                <img src="http://www.imageurlhost.com/images/3q0grsvum9r3sa7zzicy.jpg" />
+                            </div>
+                            
+                        </li>
+
+                        <input type="radio" name="radio-btn" id="img-2" />
+                        <li class="slide-container">
+                            <div class="slide">
+                              <img src="http://www.imageurlhost.com/images/of7y63174x4j2dzrdvqw.jpg" />
+                            </div>
+                            
+                        </li>
+
+                        <input type="radio" name="radio-btn" id="img-3" />
+                        <li class="slide-container">
+                            <div class="slide">
+                              <img src="http://www.imageurlhost.com/images/h22yfb1kl6vl30laj0s.jpg" />
+                            </div>
+                          
+                        </li>
+
+                        <input type="radio" name="radio-btn" id="img-4" />
+                        <li class="slide-container">
+                            <div class="slide">
+                              <img src="http://www.imageurlhost.com/images/fzy5dnv15k938y8v9zqt.jpg" />
+                            </div>
+                            
+                        </li>
+
+                        <li class="nav-dots">
+                          <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+                          <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+                          <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+                          <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+                        </li>
+                    </ul>
+                    <a href="#ventures" class="page-scroll">
                     <p> Ventures section </p>
                     <i class="fa fa-angle-double-down animated"></i>
                 </a>
@@ -424,6 +475,8 @@
     $(activeTab).fadeIn(); 
     return false;
   });
+
+    <script src="http://thecodeplayer.com/uploads/js/prefixfree.js" type="text/javascript"></script>
 </script>
 
 </body>

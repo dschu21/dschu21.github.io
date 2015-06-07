@@ -14,7 +14,7 @@ margin: 0;
 padding: 0;
 float: left;
 list-style: none;
-height: 32px; 
+height: 4vh; 
 width:99.9%;
 }
   
@@ -23,12 +23,12 @@ border-radius: 1px;
 float: left;
 margin: 0;
 padding: 0;
-height: 32px; 
-line-height: 32px; 
+height: 4vh; 
+line-height: 4vh;
 overflow: hidden;
 position: relative;
-bottom:155px;
-right: 150px;
+bottom:19vh;
+right: 10.425vw;
 
 }
   
@@ -46,15 +46,15 @@ overflow: hidden;
 clear: both;
 float: left;
 width:60%;
-min-height:250px;
-margin-bottom:10px;
+min-height:31vh;
+margin-bottom:2vh;
 position: relative;
-bottom:155px;
-right: 150px;
+bottom:19vh;
+right: 10.425vw;
 }
   
 .tabContent {
-padding: 20px;
+padding: 1vh;
 }
   
 .tabContent h3 {
@@ -76,13 +76,13 @@ border-top-left-radius:5px;
 }
   
 ul.tabs li {
-  background: black;/* change based on background colour*/
+  background: none;/* change based on background colour. Currently clear*/
 }
   
 ul.tabs li a {
 background: black;
 text-decoration: none;
-font-size: 18px;
+font-size: 135%;
 font-family: Papyrus;
 color: white;
 outline: none;
@@ -123,7 +123,7 @@ border-top:1px solid #ccc;
 background: black;
 color: white;
 opacity: 0.9;
-min-height:500px;
+min-height:62vh;
 }
 
 @media only screen and (max-width: 767px) {
@@ -160,8 +160,8 @@ html, body { background: #333 url("http://codepen.io/images/classy_fabric.png");
 
 .slides {
     padding: 0;
-    width: 609px;
-    height: 420px;
+    width: 42.29vw;
+    height: 52.5vh;
     display: block;
     margin: 0 auto;
     position: relative;
@@ -183,8 +183,8 @@ html, body { background: #333 url("http://codepen.io/images/classy_fabric.png");
 .slide {
     top: 0;
     opacity: 0;
-    width: 609px;
-    height: 420px;
+    width: 42.29vw;
+    height: 52.5vh;
     display: block;
     position:absolute;
     position:relative;
@@ -201,10 +201,10 @@ html, body { background: #333 url("http://codepen.io/images/classy_fabric.png");
 }
 
 .nav label {
-    width: 200px;
+    width: 25vh;
     height: 100%;
     display: none;
-    position:absolute;
+    /* position:absolute;*/
     position:relative;
     right:23.195vw;
     top:-81.5vh;
@@ -217,7 +217,7 @@ html, body { background: #333 url("http://codepen.io/images/classy_fabric.png");
     color: #FFF;
     font-size: 156pt;
     text-align: center;
-    line-height: 380px;
+    line-height: 47.5vh;
     font-family: "Varela Round", sans-serif;
     background-color: rgba(255, 255, 255, .3);
     text-shadow: 0px 0px 15px rgb(119, 119, 119);

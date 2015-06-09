@@ -187,12 +187,9 @@ html, body { background: #333 url("http://codepen.io/images/classy_fabric.png");
     height: 52.5vh;
     display: block;
     position:absolute;
-    position:relative;
     right:23.195vw;
-    top:-81.5vh;
-    transform: scale(0);
-
-    transition: all 0.9s ease-in-out;
+    top:-14.9vh;
+    transition: all 0.2s ease-in-out;
 }
 
 .slide img {
@@ -204,7 +201,7 @@ html, body { background: #333 url("http://codepen.io/images/classy_fabric.png");
     width: 25vh;
     height: 100%;
     display: none;
-    /* position:absolute;*/
+    /*position:absolute;*/
     position:relative;
     right:23.195vw;
     top:-81.5vh;
@@ -266,7 +263,11 @@ input:checked + .slide-container .nav label { display: block; }
 input#img-1:checked ~ .nav-dots label#img-dot-1,
 input#img-2:checked ~ .nav-dots label#img-dot-2,
 input#img-3:checked ~ .nav-dots label#img-dot-3,
-input#img-4:checked ~ .nav-dots label#img-dot-4
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6,
+input#img-7:checked ~ .nav-dots label#img-dot-7,
+input#img-8:checked ~ .nav-dots label#img-dot-8
 {
 background-color:DarkSeaGreen;
 }

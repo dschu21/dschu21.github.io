@@ -11,9 +11,8 @@
     color:white;
     background-size:100% 100%;
     background-repeat: no-repeat;
-    -webkit-filter: grayscale(0.75);
-    -webkit-filter: sepia(0.75);
-
+    /*-webkit-filter: grayscale(0.75);
+    -webkit-filter: sepia(0.75);*/
 
 } 
 #guitar
@@ -79,34 +78,34 @@
 }
 #right
 {
-    position: relative;
-    left:33vw;
-    bottom: 86vh;
+    position: absolute;
+    left:48%;
+    bottom: 35%;
     text-align: justify;
     font-family: Papyrus;
     
 }
 #left
 {
-    position: relative;
-    right:33vw;
-    bottom: 86vh;
+    position: absolute;
+    right:48%;
+    bottom: 86%;
     text-align: justify;
     font-family: Papyrus;
 }
 #rightT
 {
-    position: relative;
-    left:6.75vw;
-    bottom: 83vh;
+    position: absolute;
+    left:6.75%;
+    bottom: 83%;
     font-size: 200%;
     
 }
 #leftT
 {
-    position: relative;
-    right:6.75vh;
-    bottom: 83vh;
+    position: absolute;
+    right:6.75%;
+    bottom: 83%;
     font-size: 200%;
 }
 
@@ -218,37 +217,58 @@
      <section id="fuel" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2 style="position:relative;bottom:25vh;">Hydrogen Fuel Cell Car</h2>
-                    <div class="tabBox">
+                <h2 class="col-lg-7 col-lg-offset-2" style="position:absolute;bottom:120%;">Hydrogen Fuel Cell Car</h2>
+                    <div class="tabBox">7
                         <ul class="tabs">
-                            <li><a href="#solar-gallery">Gallery</a></li>
-
+                            <li><a href="#fuel-gallery">Gallery</a></li>
                         </ul>
                         <div class="tabContainer">
-                            <div id="solar-gallery" class="tabContent"> </div>
+                            <div id="fuel-gallery" class="tabContent"> </div>
                         </div>
                     </div> 
                     
-                        <h3 id="rightT" style="color:blue;">Summary</h3>
+                    <h3 id="rightT" style="color:#6633CC; bottom:106%; right:-6%;">Summary</h3>
                     
-                    <div id="right">
+                    <div id="right" style="bottom:80%;">
                         <p class="blocktext" style="width: 30em"> The fuel cell car was designed to be an energy 
                             efficient autonomous vehicle that is able to navigate through an arbitrary white course 
                             marked with black guide lines. Optimization of the car included efficient algorithms to 
                             make well-informed decisions on forks and dead-ends, dynamic car designs, and proper 
                             cell maintenance.</p>
                     </div>
-                    <h3 id="rightT"  STYLE="position:relative; bottom:89vh; left:4vw; color:blue;">Tech</h3>
+                    <h3 id="rightT"  STYLE="bottom:72%; right:2%; color:#6633CC;">Tech</h3>
                     <div id="right">
-                        <div style="text-decoration:underline;font-size:175%;position:relative;bottom:6vh;">Components:</br></div>
-                        <p class="blocktext" style="width: 30em;position:relative;bottom:28px;">TI MSP430 microcontroller </t>
+                        <div style="text-decoration:underline;font-size:175%;bottom:35%;">Components:</br></div>
+                        <p class="blocktext" style="width: 30em;top:-28%;">TI MSP430 microcontroller </t>
                             • Pololu 6V motor driver </t>• Two hydrogen fuel cells </br>• QTR-1A Reflectance Sensors </t>
                             • DC motors </t>• Touch sensors
                         </p>   
-                        <div style="text-decoration:underline;font-size:175%;position:relative;bottom:7vh;">Software:</br></div>
-                        <p style="position:relative;bottom:38px">C++ </t> • IAR embedded workbench</p>
- 
+                        <div style="text-decoration:underline;font-size:175%;bottom:70%;">Software:</br></div>
+                        <p style="bottom:50%;">C++ </t> • IAR embedded workbench</p>
                     </div>
+
+                </ul>
+                       
+                    <ul class="slides">
+                        <input type="radio" name="radio-btn2" id="img-5" checked />
+                        <li class="slide-container">
+                            <div class="slide">
+                                <img src="http://s7.postimg.org/ctd4u4gp7/guitar.jpg" />
+                            </div>                            
+                        </li>
+                        <input type="radio" name="radio-btn2" id="img-6" />
+                        <li class="slide-container">
+                            <div class="slide">
+                              <img src="http://s14.postimg.org/hgm818qdt/guitarcloseup.jpg" />
+                            </div>
+                        </li>
+
+                        <li class="nav-dots">
+                          <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+                          <label for="img-6" class="nav-dot" id="img-dot-6"></label>
+                        </li>
+                    </ul>
+
                     <a href="#guitar" class="page-scroll">
                     <p> Next Project </p>
                     <i class="fa fa-angle-double-down animated"></i>
@@ -263,48 +283,44 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 
-                <h2 style="position:relative;bottom:25vh;">Automated Guitar</h2>
+                <h2 class="col-lg-7 col-lg-offset-2" style="position:absolute;bottom:120%;">Automated Guitar</h2>
                 
                     <div class="tabBox">
                         <ul class="tabs">
-                            <li><a href="#solar-gallery">Gallery</a></li>
+                            <li><a href="#guitar-gallery">Gallery</a></li>
 
                         </ul>
                         <div class="tabContainer">
-                            <div id="solar-gallery" class="tabContent"> </div>
+                            <div id="guitar-gallery" class="tabContent"> </div>
                         </div>
                     </div> 
-                        <ul class="slides">
-                        <input type="radio" name="radio-btn" id="img-1" checked />
+                    <ul class="slides">
+                        <input type="radio" name="radio-btn1" id="img-1" checked />
                         <li class="slide-container">
                             <div class="slide">
                                 <img src="http://www.imageurlhost.com/images/3q0grsvum9r3sa7zzicy.jpg" />
-                            </div>
-                            
+                            </div>                            
                         </li>
-
-                        <input type="radio" name="radio-btn" id="img-2" />
+                        <input type="radio" name="radio-btn1" id="img-2" />
                         <li class="slide-container">
                             <div class="slide">
                               <img src="http://www.imageurlhost.com/images/of7y63174x4j2dzrdvqw.jpg" />
                             </div>
-                            
                         </li>
 
-                        <input type="radio" name="radio-btn" id="img-3" />
+                        <input type="radio" name="radio-btn1" id="img-3" />
                         <li class="slide-container">
                             <div class="slide">
                               <img src="http://www.imageurlhost.com/images/h22yfb1kl6vl30laj0s.jpg" />
                             </div>
-                          
                         </li>
 
-                        <input type="radio" name="radio-btn" id="img-4" />
+                        <input type="radio" name="radio-btn1" id="img-4" />
                         <li class="slide-container">
                             <div class="slide">
-                              <img src="http://www.imageurlhost.com/images/fzy5dnv15k938y8v9zqt.jpg" />
+                                <img src="http://www.imageurlhost.com/images/fzy5dnv15k938y8v9zqt.jpg" />
                             </div>
-                            
+                                
                         </li>
 
                         <li class="nav-dots">
@@ -314,6 +330,7 @@
                           <label for="img-4" class="nav-dot" id="img-dot-4"></label>
                         </li>
                     </ul>
+
                     <a href="#ventures" class="page-scroll">
                     <p> Ventures section </p>
                     <i class="fa fa-angle-double-down animated"></i>
@@ -327,7 +344,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 
-                <h2 style="position:relative;bottom:25vh;">Maestro</h2>
+                <h2 class="col-lg-7 col-lg-offset-2" style="position:absolute;bottom:120%;">Maestro</h2>
                 <p> Music Control Reimagined </p>
                 <a href="#run" class="page-scroll">
                     <p> Next project </p>
@@ -342,7 +359,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 
-                <h2 style="position:relative;bottom:25vh;">Run Run Run</h2>
+                <h2 class="col-lg-7 col-lg-offset-2" style="position:absolute;bottom:120%;">Run Run Run</h2>
                 <p> Infinite Side Scroll Arcade Game </p>
 
                 <a href="#scanner" class="page-scroll">
@@ -358,7 +375,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 
-                <h2 style="position:relative;bottom:25vh;">Delta Scanner</h2>
+                <h2 class="col-lg-7 col-lg-offset-2" style="position:absolute;bottom:120%;">Delta Scanner</h2>
                 <p> Home Automation </p>
                 <a href="#organizations" class="page-scroll">
                     <p> Organizations section </p>
@@ -373,7 +390,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 
-                <h2 style="position:relative;bottom:25vh;">Midnight Sun Solar Rayce Car Team</h2>
+                <h2 class="col-lg-7 col-lg-offset-2" style="position:absolute;bottom:120%;">Midnight Sun Solar Rayce Car Team</h2>
                 <p> Suspension Team </p>
                 <a href="#swimteam" class="page-scroll">
                     <p> Next organization </p>
@@ -388,7 +405,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 
-                <h2 style="position:relative;bottom:25vh;">Varsity Swim Team</h2>
+                <h2 class="col-lg-7 col-lg-offset-2" style="position:absolute;bottom:120%;">Varsity Swim Team</h2>
                 <p> Tihanyi Divisional Champions </p>
                 <a href="#outers" class="page-scroll">
                     <p> Next Organization </p>
@@ -403,7 +420,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 
-                <h2 style="position:relative;bottom:25vh;">Outers Club</h2>
+                <h2 class="col-lg-7 col-lg-offset-2" style="position:absolute;bottom:120%;">Outers Club</h2>
                 <p> Bouldering </p>
                 <a href="#contacts" class="page-scroll">
                     <p> Contacts section </p>
@@ -413,13 +430,11 @@
         </div>
     </section>
 
-
-
     <!-- Contact Section -->
      <section id="contacts" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2 style="position:relative;bottom:25vh;">Contacts</h2>
+                <h2 class="col-lg-7 col-lg-offset-2" style="position:absolute;bottom:120%;">Contacts</h2>
                 <ul class="list-inline banner-social-buttons">
                     <li>
                         <a href="https://github.com/dschu21" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>

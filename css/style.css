@@ -14,7 +14,7 @@ margin: 0;
 padding: 0;
 float: left;
 list-style: none;
-height: 4vh; 
+height: 5%; 
 width:99.9%;
 }
   
@@ -47,10 +47,10 @@ clear: both;
 float: left;
 width:60%;
 min-height:31vh;
-margin-bottom:2vh;
+margin-bottom:2.2vh;
 position: relative;
 bottom:19vh;
-right: 10.425vw;
+right: 16.325%;
 }
   
 .tabContent {
@@ -183,12 +183,12 @@ html, body { background: #333 url("http://codepen.io/images/classy_fabric.png");
 .slide {
     top: 0;
     opacity: 0;
-    width: 42.29vw;
-    height: 52.5vh;
+    width: 100%;
+    height: 100%;
     display: block;
     position:absolute;
-    right:23.195vw;
-    top:-14.9vh;
+    right:54.85%;
+    top:-23.5%;
     transition: all 0.2s ease-in-out;
 }
 
@@ -203,8 +203,8 @@ html, body { background: #333 url("http://codepen.io/images/classy_fabric.png");
     display: none;
     /*position:absolute;*/
     position:relative;
-    right:23.195vw;
-    top:-81.5vh;
+    right:54.85%;
+    top:-28.4%;
     opacity: 0;
     z-index: 9;
     cursor: pointer;
@@ -248,8 +248,8 @@ input:checked + .slide-container .nav label { display: block; }
 	height: 11px;
 	margin: 0 4px;
 	position: relative;
-        right:23.73vw;
-        top: -9vh;
+        right:54.85%;
+    	top:-650%;
 	border-radius: 100%;
 	display: inline-block;
 	background-color: white;
@@ -263,11 +263,13 @@ input:checked + .slide-container .nav label { display: block; }
 input#img-1:checked ~ .nav-dots label#img-dot-1,
 input#img-2:checked ~ .nav-dots label#img-dot-2,
 input#img-3:checked ~ .nav-dots label#img-dot-3,
-input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-4:checked ~ .nav-dots label#img-dot-4
+{
+background-color:DarkSeaGreen;
+}
+
 input#img-5:checked ~ .nav-dots label#img-dot-5,
-input#img-6:checked ~ .nav-dots label#img-dot-6,
-input#img-7:checked ~ .nav-dots label#img-dot-7,
-input#img-8:checked ~ .nav-dots label#img-dot-8
+input#img-6:checked ~ .nav-dots label#img-dot-6
 {
 background-color:DarkSeaGreen;
 }

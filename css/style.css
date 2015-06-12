@@ -160,11 +160,11 @@ html, body { background: #333 url("http://codepen.io/images/classy_fabric.png");
 
 .slides {
     padding: 0;
-    width: 42.29vw;
-    height: 52.5vh;
+    width: 64.32%;
+    height: 67.75%;
     display: block;
     margin: 0 auto;
-    position: relative;
+    position: absolute;
 }
 
 .slides * {
@@ -187,8 +187,8 @@ html, body { background: #333 url("http://codepen.io/images/classy_fabric.png");
     height: 100%;
     display: block;
     position:absolute;
-    right:54.85%;
-    top:-23.5%;
+    right:29.4%;
+    top:-27.75%;
     transition: all 0.2s ease-in-out;
 }
 
@@ -248,7 +248,7 @@ input:checked + .slide-container .nav label { display: block; }
 	height: 11px;
 	margin: 0 4px;
 	position: relative;
-        right:54.85%;
+        right:28%;
     	top:-650%;
 	border-radius: 100%;
 	display: inline-block;

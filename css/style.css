@@ -28,7 +28,7 @@ line-height: 4vh;
 overflow: hidden;
 position: relative;
 bottom:19vh;
-right: 10.425vw;
+right: 10.35vw;
 
 }
   
@@ -123,7 +123,7 @@ border-top:1px solid #ccc;
 background: black;
 color: white;
 opacity: 0.9;
-min-height:62vh;
+min-height:75vh;
 }
 
 @media only screen and (max-width: 767px) {
@@ -183,27 +183,27 @@ html, body { background: #333 url("http://codepen.io/images/classy_fabric.png");
 .slide {
     top: 0;
     opacity: 0;
-    width: 100%;
+    width: 100.25%;
     height: 100%;
     display: block;
     position:absolute;
     right:29.4%;
-    top:-27.75%;
+    top:-23.72%;
     transition: all 0.2s ease-in-out;
 }
 
 .slide img {
-    width: 90%;
+    width: 89.75%;
     height: 100%;
 }
 
 .nav label {
-    width: 25vh;
+    width: 25.1vh;
     height: 100%;
     display: none;
     /*position:absolute;*/
     position:relative;
-    right:54.85%;
+    right:55%;
     top:-28.4%;
     opacity: 0;
     z-index: 9;
@@ -236,7 +236,7 @@ input:checked + .slide-container .nav label { display: block; }
 
 .nav-dots {
 	width: 100%;
-	bottom: 9px;
+	bottom: -5px;
 	height: 11px;
 	display: block;
 	position: absolute;
@@ -249,7 +249,7 @@ input:checked + .slide-container .nav label { display: block; }
 	margin: 0 4px;
 	position: relative;
         right:28%;
-    	top:-650%;
+    	top:-625%;
 	border-radius: 100%;
 	display: inline-block;
 	background-color: white;
@@ -270,6 +270,12 @@ background-color:DarkSeaGreen;
 
 input#img-5:checked ~ .nav-dots label#img-dot-5,
 input#img-6:checked ~ .nav-dots label#img-dot-6
+{
+background-color:DarkSeaGreen;
+}
+
+input#img-7:checked ~ .nav-dots label#img-dot-7,
+input#img-8:checked ~ .nav-dots label#img-dot-8
 {
 background-color:DarkSeaGreen;
 }

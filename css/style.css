@@ -50,7 +50,7 @@ min-height:31vh;
 margin-bottom:2.2vh;
 position: relative;
 bottom:19vh;
-right: 16.325%;
+right: 16.3%;
 }
   
 .tabContent {
@@ -88,9 +88,9 @@ color: white;
 outline: none;
 border: 1px solid #ccc;
 margin-right: 0.2vw;
-padding-left: 1vw;
-padding-right: 1vw;
-padding-bottom: 1vw;
+padding-left: 15%;
+padding-right: 15%;
+padding-bottom: 15%;
 
 }
   
@@ -119,7 +119,7 @@ div.tabContainer {
 border-bottom:1px solid #ccc;
 border-left:1px solid #ccc;
 border-right:1px solid #ccc;
-border-top:1px solid #ccc;
+border-top:2px solid #ccc;
 background: black;
 color: white;
 opacity: 0.9;
@@ -161,7 +161,7 @@ html, body { background: #333 url("http://codepen.io/images/classy_fabric.png");
 .slides {
     padding: 0;
     width: 64.32%;
-    height: 67.75%;
+    height: 67.76%;
     display: block;
     margin: 0 auto;
     position: absolute;
@@ -183,12 +183,12 @@ html, body { background: #333 url("http://codepen.io/images/classy_fabric.png");
 .slide {
     top: 0;
     opacity: 0;
-    width: 100.25%;
+    width: 100.0%;
     height: 100%;
     display: block;
     position:absolute;
     right:29.4%;
-    top:-23.72%;
+    top:-23.725%;
     transition: all 0.2s ease-in-out;
 }
 

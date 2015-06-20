@@ -279,3 +279,11 @@ input#img-8:checked ~ .nav-dots label#img-dot-8
 {
 background-color:DarkSeaGreen;
 }
+
+input#img-9:checked ~ .nav-dots label#img-dot-9,
+input#img-10:checked ~ .nav-dots label#img-dot-10,
+input#img-11:checked ~ .nav-dots label#img-dot-11,
+input#img-12:checked ~ .nav-dots label#img-dot-12
+{
+background-color:DarkSeaGreen;
+}

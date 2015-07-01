@@ -287,3 +287,10 @@ input#img-12:checked ~ .nav-dots label#img-dot-12
 {
 background-color:DarkSeaGreen;
 }
+
+input#img-13:checked ~ .nav-dots label#img-dot-13,
+input#img-14:checked ~ .nav-dots label#img-dot-14,
+input#img-15:checked ~ .nav-dots label#img-dot-15
+{
+background-color:DarkSeaGreen;
+}

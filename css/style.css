@@ -294,3 +294,19 @@ input#img-15:checked ~ .nav-dots label#img-dot-15
 {
 background-color:DarkSeaGreen;
 }
+
+input#img-16:checked ~ .nav-dots label#img-dot-16,
+input#img-17:checked ~ .nav-dots label#img-dot-17,
+input#img-18:checked ~ .nav-dots label#img-dot-18,
+input#img-19:checked ~ .nav-dots label#img-dot-19
+{
+background-color:DarkSeaGreen;
+}
+
+
+input#img-20:checked ~ .nav-dots label#img-dot-20,
+input#img-21:checked ~ .nav-dots label#img-dot-21,
+input#img-21:checked ~ .nav-dots label#img-dot-22
+{
+background-color:DarkSeaGreen;
+}

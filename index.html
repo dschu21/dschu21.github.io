@@ -40,7 +40,6 @@
 }
 #solarcar
 {
-    /* background-image: url('/C:/Users/Sin Lim/Documents/Projects/Website/dschu21.github.io/img/solarcar.jpg'); */
     width: 100%; 
     background-color: IndianRed;
     color:black;
@@ -82,7 +81,7 @@
     text-align: justify;
     font-family: Papyrus;
     font-size: 147%;
-    width: 72%;
+    width: 70%;
     
 }
 #left
@@ -117,7 +116,15 @@
 
       <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-
+    <script src="http://code.jquery.com/jquery-latest.js"></script> 
+    <script src="js/jquery-photo-resize.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        $(document).ready(function() {
+            $("img").photoResize({
+                bottomSpacing: 15
+            });
+        });
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -503,7 +510,7 @@
 
                 <h3 id="rightT" style="color:#6633CC; bottom:108%; right:-6%;">Summary</h3>
                     
-                <div id="right"style="position:absolute;bottom:82%;">
+                <div id="right"style="position:absolute;bottom:80%;">
                         Delta Scanner was created at Delta Hacks 2015. It uses the Estimote BLE beacon to allow a user to trigger location-based events.
                         The scanner uses position triangulation to accurately locate a device connected with a Bluetooth LE connection to an android application. With the intent of connecting to a smartphone that is carried around, a coffee maker was automated to turn on under specific time and movement conditions. 
                         

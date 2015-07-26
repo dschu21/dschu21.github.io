@@ -6,7 +6,7 @@
 #fuel 
 {
     width: 100% ; 
-    background-color: black;
+    background-color: #202020;
     color:white;
     background-size:100% 100%;
     background-repeat: no-repeat;
@@ -17,32 +17,32 @@
 #guitar
 {
     width: 100%; 
-    background-color: CadetBlue;
-    color:black;
+    background-color: #202020;
+    color:white;
 }
 #maestro
 {
     width: 100%; 
-    background-color: IndianRed;
+    background-color: #202020;
     color:white;
 }
 #run
 {
     width: 100%; 
-    background-color: LightGray;
-    color:black;
+    background-color: #202020;
+    color:white;
 }
 #scanner
 {
     width: 100%; 
-    background-color: CadetBlue;
+    background-color: #202020;
     color:white;
 }
 #solarcar
 {
     width: 100%; 
-    background-color: IndianRed;
-    color:black;
+    background-color: #202020;
+    color:white;
     background-size:100% 100%;
     background-repeat: no-repeat;
     -webkit-filter: grayscale(0.25);
@@ -51,14 +51,16 @@
 #swimteam
 {
     width: 100%; 
-    background-color: black;
-    color:white; 
+    background-color: #202020;
+    color:white;
 }
 #outers
 {
     width: 100%; 
-    background-color: CadetBlue;
-    color:black;
+    /*background-color: CadetBlue;*/
+    /*background-color: IndianRed;*/
+    background-color: #202020;
+    color:white;
 }
 
 #organizations
@@ -68,12 +70,27 @@
         column-count: 3;
         -->
 }
+#swimteam
+{
+    width: 100%; 
+    /*background-color: CadetBlue;*/
+    background-color: #202020;
+    color:white;
+}
+#courses
+{
+    width: 100%; 
+    /*background-color: CadetBlue;*/
+    background-color: #202020;
+    color:white;
+}
 #contacts
 {
     width: 100%; 
-    background-color: IndianRed;
+    background-color: #202020;
     color:white;
 }
+
 #right
 {
     position: absolute;
@@ -97,6 +114,7 @@
     left:7%;
     bottom: 84%;
     font-size: 215%;
+    color: #FF5A09;
     
 }
 #leftT
@@ -107,24 +125,31 @@
     font-size: 200%;
 }
 
+.r
+{
+    text-align: justify;
+    font-family: Papyrus;
+    font-size: 147%;
+    width: 85%;
+    
+}
+.rT
+{
+    font-size: 215%;
+    color: #FF5A09;
+    text-align: left;
+}
 
 </style>
 <head>
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-<link rel="icon" href="img/favicons.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicons.ico" type="image/x-icon">
 
-      <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script src="http://code.jquery.com/jquery-latest.js"></script> 
-    <script src="js/jquery-photo-resize.js"></script>
-    <script type="text/javascript" charset="utf-8">
-        $(document).ready(function() {
-            $("img").photoResize({
-                bottomSpacing: 15
-            });
-        });
-    </script>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -196,6 +221,9 @@
                         <a class="page-scroll" href="#solarcar">Organizations</a>
                     </li>
                     <li>
+                        <a class="page-scroll" href="#courses">Courses</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="#contacts">Contacts</a>
                     </li>
                 </ul>
@@ -212,7 +240,7 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="brand-heading">DANYON CHU</h1>
-                        <h2 class="intro-text">Designer Engineer Athlete</br>Website in progress...</h2>
+                        <h2 class="intro-text">Designer Engineer Athlete</br>Website under development...</h2>
                         <a href="#fuel" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
@@ -223,111 +251,95 @@
     </header>
 
     <!-- Fuel Cell Car  Section -->
-     <section id="fuel" class="container content-section text-center">
+    <section id="fuel" class="container content-section text-center">
+        <h2 style="margin-top:-200px">Hydrogen Fuel Cell Car</h2>
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2 class="col-lg-7 col-lg-offset-2" style="position:absolute;bottom:120%;">Hydrogen Fuel Cell Car</h2>
-                    <div class="tabBox">
-                        <ul class="tabs">
-                            <li><a href="#fuel-gallery">Gallery</a></li>
-                        </ul>
-                        <div class="tabContainer">
-                            <div id="fuel-gallery" class="tabContent"> </div>
-                        </div>
-                    </div> 
-                    
-                    <h3 id="rightT" style="color:#6633CC; bottom:108%; right:-6%;">Summary</h3>
-                    
-                    <div id="right"style="position:absolute;bottom:90%;">
-                            The fuel cell car was designed to be an energy efficient autonomous vehicle that is able to navigate through an arbitrary white course marked with black guide lines. Optimization of the car included efficient algorithms to make well-informed decisions on forks and dead-ends, dynamic car designs, and proper cell maintenance.
-                    </div>
-                    <h3 id="rightT"  STYLE="bottom:78%; right:2%; color:#6633CC;">Tech</h3>
-                    <div id="right" style="position:absolute; text-decoration:underline;font-size:175%;bottom:75%;">Components:</br></div>
-                    <p id="right" style="position:absolute; bottom:55%;">TI MSP430 microcontroller </t>
-                        • Pololu 6V motor driver </t>• Two hydrogen fuel cells </br>• QTR-1A Reflectance Sensors </t>
-                        • DC motors </t>• Touch sensors
-                    </p>   
-                    <div id="right" style="position:absolute; text-decoration:underline;font-size:175%;bottom:52%;">Software:</br></div>
-                    <p id="right" style="position:absolute; bottom:41%;">C++ </t> • IAR embedded workbench</p>
-
-
-                    <ul class="slides">
-                        <input type="radio" name="radio-btn1" id="img-1" checked />
-                        <li class="slide-container">
-                            <div class="slide">
-                                <img src="http://www.imageurlhost.com/images/3q0grsvum9r3sa7zzicy.jpg" />
-                            </div>                            
-                        </li>
-                        <input type="radio" name="radio-btn1" id="img-2" />
-                        <li class="slide-container">
-                            <div class="slide">
-                              <img src="http://www.imageurlhost.com/images/of7y63174x4j2dzrdvqw.jpg" />
-                            </div>
-                        </li>
-
-                        <input type="radio" name="radio-btn1" id="img-3" />
-                        <li class="slide-container">
-                            <div class="slide">
-                              <img src="http://www.imageurlhost.com/images/h22yfb1kl6vl30laj0s.jpg" />
-                            </div>
-                        </li>
-
-                        <input type="radio" name="radio-btn1" id="img-4" />
-                        <li class="slide-container">
-                            <div class="slide">
-                                <img src="http://www.imageurlhost.com/images/fzy5dnv15k938y8v9zqt.jpg" />
-                            </div>
-                                
-                        </li>
-
-                        <li class="nav-dots">
-                          <label for="img-1" class="nav-dot" id="img-dot-1"></label>
-                          <label for="img-2" class="nav-dot" id="img-dot-2"></label>
-                          <label for="img-3" class="nav-dot" id="img-dot-3"></label>
-                          <label for="img-4" class="nav-dot" id="img-dot-4"></label>
-                        </li>
+            <div class="col-md-6" style="padding:15px;">
+                <div class="tabBox">
+                    <ul class="tabs">
+                        <li><a>Gallery</a></li>
                     </ul>
 
-                    <a href="#guitar" class="page-scroll">
-                    <p> Next Project </p>
-                    <i class="fa fa-angle-double-down animated"></i>
-                </a>
+                    <div class="tabContainer">
+                        <div class="tabContent">
+                            <ul class="slides">
+                                <input type="radio" name="radio-btn1" id="img-1" checked />
+                                <li class="slide-container">
+                                    <div class="slide">
+                                        <img src="http://www.imageurlhost.com/images/3q0grsvum9r3sa7zzicy.jpg"/>
+                                    </div>                            
+                                </li>
+                                <input type="radio" name="radio-btn1" id="img-2" />
+                                <li class="slide-container">
+                                    <div class="slide">
+                                        <img src="http://www.imageurlhost.com/images/of7y63174x4j2dzrdvqw.jpg" style="position:absolute;bottom:0%;right:0%;"/>
+                                    </div>                             
+                                </li>
+                                <input type="radio" name="radio-btn1" id="img-3" />
+                                <li class="slide-container">
+                                    <div class="slide">
+                                        <img src="http://www.imageurlhost.com/images/h22yfb1kl6vl30laj0s.jpg" style="position:absolute;bottom:0%;right:0%;"/>
+                                    </div>                             
+                                </li>
+                                <input type="radio" name="radio-btn1" id="img-4" />
+                                <li class="slide-container">
+                                    <div class="slide">
+                                        <img src="http://www.imageurlhost.com/images/fzy5dnv15k938y8v9zqt.jpg" style="position:absolute;bottom:0%;right:0%;"/>
+                                    </div>                             
+                                </li>
+                           
+                                <li class="nav-dots" >
+                                    <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+                                    <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+                                    <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+                                    <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+                                </li> 
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>   
+            </div>
+
+            <div class="col-md-6">
+                <h3 class="rT"></br>Summary</h3>
+                <div class="r">
+                        The fuel cell car was designed to be an energy efficient autonomous vehicle that is able to navigate through an arbitrary white course marked with black guide lines. Optimization of the car included efficient algorithms to make well-informed decisions on forks and dead-ends, dynamic car designs, and proper cell maintenance.
+                </div>
+
+                <h3 class="rT"></br>Tech</h3>
+                <div class="r" style="text-decoration:underline;font-size:175%;">Components:</div>
+                <p class="r">TI MSP430 microcontroller </t>
+                    • Pololu 6V motor driver </t>• Two hydrogen fuel cells </t>• QTR-1A Reflectance Sensors </t>
+                    • DC motors </t>• Touch sensors
+                </p>   
+                <div class="r" style="text-decoration:underline;font-size:175%;">Software:</br></div>
+                <p class="r">C++ </t> • IAR embedded workbench</p>
+
             </div>
         </div>
 
-    </section> 
+        <a href="#guitar" class="page-scroll">
+            <p> Next Project </p>
+            <i class="fa fa-angle-double-down animated"></i>
+        </a>
+    </section>
+
+
 
      <!-- Automated Guitar Section -->
-    <section id="guitar" class="container content-section text-center">
+     <section id="guitar" class="container content-section text-center">
+        <h2 style="margin-top:-200px">Guitar Villain</h2>
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                
-                <h2 class="col-lg-7 col-lg-offset-2" style="position:absolute;bottom:120%;">Guitar Villain</h2>
-                
-                    <div class="tabBox">
-                        <ul class="tabs">
-                            <li><a href="#guitar-gallery">Gallery</a></li>
+            <div class="col-md-6" style="padding:15px;">
+                <div class="tabBox">
+                    <ul class="tabs">
+                        <li><a>Gallery</a></li>
+                    </ul>
 
-                        </ul>
-                        <div class="tabContainer">
-                            <div id="guitar-gallery" class="tabContent"> </div>
-                        </div>
-                    </div> 
-
-                     <h3 id="rightT" style="color:#6633CC; bottom:108%; right:-6%;">Summary</h3>
-                   
-                    <div id="right"style="position:absolute;bottom:86%;">
-                           This project provides an alternative method to learning the basics of guitar playing. It is built in a similar fashion to the popular video game controller 'Guitar Hero', however in this version, the guitar can be set to an autonomous mode. Users can learn to play the guitar themselves, or learn from the guitar through listening to the pitches or play alongside the guitar as a duet. 
-                    </div>
-                    <h3 id="rightT"  STYLE="bottom:75%; right:2%; color:#6633CC;">Tech</h3>
-                    <div id="right" style="position:absolute; text-decoration:underline;font-size:175%;bottom:73%;">Components:</div>
-                    <p id="right" style="position:absolute; bottom:58%;">NXT Mindstorm brick • 2 Motors (w/ encoders) • Ultrasonic sensor • Touch sensor • DC motors • Touch sensors
-                    </p>   
-                    <div id="right" style="position:absolute; text-decoration:underline;font-size:175%;bottom:56%;">Software:</div>
-                    <p id="right" style="position:absolute; bottom:45%;">C++ • Mindstorm EV3 programming software</p>
-
-
-                    <ul class="slides">
+                    <div class="tabContainer">
+                        <div class="tabContent">
+                            <ul class="slides">
                         <input type="radio" name="radio-btn2" id="img-5" checked />
                         <li class="slide-container">
                             <div class="slide">
@@ -337,7 +349,7 @@
                         <input type="radio" name="radio-btn2" id="img-6" />
                         <li class="slide-container">
                             <div class="slide">
-                              <img src="http://s14.postimg.org/hgm818qdt/guitarcloseup.jpg" />
+                              <img src="http://s14.postimg.org/hgm818qdt/guitarcloseup.jpg" style="position:absolute;bottom:0%;right:0%;"/>
                             </div>
                         </li>
 
@@ -347,33 +359,72 @@
                         </li>
                     </ul>
 
-                    <a href="#maestro" class="page-scroll">
-                    <p> Next Project </p>
-                    <i class="fa fa-angle-double-down animated"></i>
-                </a>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+
+            <div class="col-md-6">
+                <h3 class="rT"></br>Summary</h3>
+                <div class="r">
+                        This project provides an alternative method to learning the basics of guitar playing. It is built in a similar fashion to the popular video game controller 'Guitar Hero', however in this version, the guitar can be set to an autonomous mode. Users can learn to play the guitar themselves, learn from the guitar through listening to the pitches, or play alongside the guitar as a duet.
+                </div>
+
+                <h3 class="rT"></br>Tech</h3>
+                    <div class="r" style="text-decoration:underline;font-size:175%;">Components:</div>
+                    <p class="r">NXT Mindstorm brick • 2 Motors (w/ encoders) • Ultrasonic sensor • Touch sensor • DC motors • Touch sensors</p>   
+                    <div class="r" style="text-decoration:underline;font-size:175%;">Software:</div>
+                    <p class="r">C++ • Mindstorm EV3 programming software</p>
             </div>
         </div>
+
+        <a href="#maestro" class="page-scroll">
+            <p> Next Project </p>
+            <i class="fa fa-angle-double-down animated"></i>
+        </a>
     </section>
 
+
      <!-- Maestro Section -->
-    <section id="maestro" class="container content-section text-center">
+     <section id="maestro" class="container content-section text-center">
+        <h2 style="margin-top:-200px">Leap Maestro</h2>
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                
-                <h2 class="col-lg-7 col-lg-offset-2" style="position:absolute;bottom:120%;">Maestro</h2>
+            <div class="col-md-6" style="padding:15px;">
                 <div class="tabBox">
                     <ul class="tabs">
-                        <li><a href="#maestro-gallery">Gallery</a></li>
-
+                        <li><a>Gallery</a></li>
                     </ul>
                     <div class="tabContainer">
-                        <div id="maestro-gallery" class="tabContent"> </div>
-                    </div>
-                </div> 
+                        <div class="tabContent">
+                            <ul class="slides">
+                                <input type="radio" name="radio-btn3" id="img-7" checked />
+                                <li class="slide-container">
+                                    <div class="slide">
+                                        <img src="http://s10.postimg.org/e9v960hvd/maestro.jpg" />
+                                    </div>                            
+                                </li>
+                                <input type="radio" name="radio-btn3" id="img-8" />
+                                <li class="slide-container">
+                                    <div class="slide">
+                                        <iframe width="548" height="515" src="https://www.youtube.com/embed/3bbYb_uMQH0" 
+                                        style="position:absolute;bottom:0%;right:0%;" frameborder="0" allowfullscreen></iframe>
+                                    </div>                            
+                                </li>
 
-                <h3 id="rightT" style="color:#6633CC; bottom:108%; right:-6%;">Summary</h3>
-                    
-                <div id="right"style="position:absolute;bottom:70%;">
+
+                                <li class="nav-dots">
+                                    <label for="img-7" class="nav-dot" id="img-dot-7"></label>
+                                    <label for="img-8" class="nav-dot" id="img-dot-8"></label>
+                                </li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+
+            <div class="col-md-6">
+                <h3 class="rT"></br>Summary</h3>
+                <div class="r">
                         Maestro was created at Hack Western 2015. It uses the Leap Motion and Myo arm band to give the user the ability to control music playback and dynamics in real time; as if they were a conductor in an orchestra. Key features include:<br>
                         • Dynamic playback at any speed subject to your conducting on the Leap Motion<br>
                         • Ability to adjust equalization in real time using Myo<br>
@@ -381,75 +432,35 @@
                         • Three JS 3D Model that tracks your movements<br> 
                         • Variety of song choices<br> 
                 </div>
-                <h3 id="rightT"  STYLE="bottom:59%; right:2%; color:#6633CC;">Tech</h3>
-                <div id="right" style="position:absolute; text-decoration:underline;font-size:175%;bottom:58%;">Components:</div>
-                <p id="right" style="position:absolute; bottom:49%;">Leap Motion • Myo Armband</p> 
-                <div id="right" style="position:absolute; text-decoration:underline;font-size:175%;bottom:47%;">Software:</div>
-                <p id="right" style="position:absolute; bottom:33%;">Myo SDK • Leap Motion SDK • Web Audio API<br>Javascript: Node.js • Three.js • jQuery</p>
 
-                <ul class="slides">
-                    <input type="radio" name="radio-btn3" id="img-7" checked />
-                    <li class="slide-container">
-                        <div class="slide">
-                            <img src="http://s10.postimg.org/e9v960hvd/maestro.jpg" />
-                        </div>                            
-                    </li>
-                    <input type="radio" name="radio-btn3" id="img-8" />
-                    <li class="slide-container">
-                        <div class="slide">
-                            <iframe width="548" height="515" src="https://www.youtube.com/embed/3bbYb_uMQH0" frameborder="0" allowfullscreen></iframe>
-                        </div>                            
-                    </li>
-
-
-                    <li class="nav-dots" style="position:absolute;right:2%;">
-                        <label for="img-7" class="nav-dot" id="img-dot-7"></label>
-                        <label for="img-8" class="nav-dot" id="img-dot-8"></label>
-                    </li>
-                        
-                </ul>
-
-                <a href="#run" class="page-scroll">
-                    <p> Next project </p>
-                    <i class="fa fa-angle-double-down animated"></i>
-                </a>
+                <h3 class="rT"></br>Tech</h3>
+                <div class="r" style="text-decoration:underline;font-size:175%;">Components:</div>
+                <p class="r">Leap Motion • Myo Armband</p> 
+                <div class="r" style="text-decoration:underline;font-size:175%;">Software:</div>
+                <p class="r">Myo SDK • Leap Motion SDK • Web Audio API<br>Javascript: Node.js • Three.js • jQuery</p>
             </div>
         </div>
+
+        <a href="#run" class="page-scroll">
+            <p> Next Project </p>
+            <i class="fa fa-angle-double-down animated"></i>
+        </a>
     </section>
 
+
  <!-- RunRunRun android dev Section -->
-    <section id="run" class="container content-section text-center">
+
+ <section id="run" class="container content-section text-center">
+        <h2 style="margin-top:-200px">Run Run Run</h2>
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                
-                <h2 class="col-lg-7 col-lg-offset-2" style="position:absolute;bottom:120%;">Run Run Run</h2>
+            <div class="col-md-6" style="padding:15px;">
                 <div class="tabBox">
                     <ul class="tabs">
-                        <li><a href="#run-gallery">Gallery</a></li>
-
+                        <li><a>Gallery</a></li>
                     </ul>
                     <div class="tabContainer">
-                        <div id="run-gallery" class="tabContent"> </div>
-                    </div>
-                </div> 
-
-                <h3 id="rightT" style="color:#6633CC; bottom:108%; right:-6%;">Summary</h3>
-                    
-                <div id="right"style="position:absolute;bottom:86%;">
-                      Run Run Run is an infinite side scroll arcade game. Survive as long as possible by jumping, dodging, and shooting
-                      to get by obstacles. With three different unique levels, custom graphics, power ups, and increasing level speeds, gain points by
-                      surviving and shooting your way through this game for as long as possible. Compatible with Android, IOS, and desktop.
-
-                </div>
-                <h3 id="rightT"  STYLE="bottom:74%; right:3%; color:#6633CC;">Tech</h3>
-                <div id="right" style="position:absolute; text-decoration:underline;font-size:175%;bottom:73%;">Software:</div>
-                <p id="right" style="position:absolute; bottom:63%;">Eclipse • Java • libGDX framework</p>
-                <div id="right" style="position:absolute; text-decoration:underline;font-size:175%;bottom:60%;">Key Algorithms</div>
-                <p id="right" style="position:absolute; bottom:49%;">• Active tracking on character collision detection </p>
-
-
-
-                <ul class="slides">
+                        <div class="tabContent">
+                            <ul class="slides">
                     <input type="radio" name="radio-btn4" id="img-9" checked />
                     <li class="slide-container">
                         <div class="slide">
@@ -459,19 +470,19 @@
                     <input type="radio" name="radio-btn4" id="img-10" />
                     <li class="slide-container">
                         <div class="slide">
-                            <img src="http://s10.postimg.org/5qo9r76ix/runscene1.png" />
+                            <img src="http://s10.postimg.org/5qo9r76ix/runscene1.png" style="position:absolute;bottom:0%;right:0%;" />
                         </div>                             
                     </li>
                     <input type="radio" name="radio-btn4" id="img-11" />
                     <li class="slide-container">
                         <div class="slide">
-                            <img src="http://s10.postimg.org/6ws9pzutl/runscene2.png" />
+                            <img src="http://s10.postimg.org/6ws9pzutl/runscene2.png" style="position:absolute;bottom:0%;right:0%;" />
                         </div>                            
                     </li>
                     <input type="radio" name="radio-btn4" id="img-12" />
                     <li class="slide-container">
                         <div class="slide">
-                            <img src="http://s10.postimg.org/7xsif4bt5/runscene3.png" />
+                            <img src="http://s10.postimg.org/7xsif4bt5/runscene3.png" style="position:absolute;bottom:0%;right:0%;" />
                         </div>                            
                     </li>
 
@@ -484,217 +495,241 @@
                     </li>
                         
                 </ul>
-                <a href="#scanner" class="page-scroll">
-                    <p> Next project </p>
-                    <i class="fa fa-angle-double-down animated"></i>
-                </a>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+
+            <div class="col-md-6">
+                <h3 class="rT"></br>Summary</h3>
+                <div class="r">
+                    Run Run Run is an infinite side scroll arcade game. Survive as long as possible by jumping, dodging, and shooting
+                    to get by obstacles. With three different unique levels, custom graphics, power ups, and increasing level speeds, gain points by
+                    surviving and shooting your way through this game for as long as possible. Compatible with Android, IOS, and desktop.
+                </div>
+
+                <h3 class="rT"></br>Tech</h3>
+                <div class="r" style="text-decoration:underline;font-size:175%;">Software:</div>
+                <p class="r">Eclipse • Java • libGDX framework</p>
+                <div class="r" style="text-decoration:underline;font-size:175%;">Key Algorithms</div>
+                <p class="r">• Active tracking on character collision detection </p> 
+       
             </div>
         </div>
+
+        <a href="#scanner" class="page-scroll">
+            <p> Next Project </p>
+            <i class="fa fa-angle-double-down animated"></i>
+        </a>
     </section>
+
 
  <!-- Delta Scanner Section -->
-    <section id="scanner" class="container content-section text-center">
+ <section id="scanner" class="container content-section text-center">
+        <h2 style="margin-top:-200px">Delta Scanner</h2>
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                
-                <h2 class="col-lg-7 col-lg-offset-2" style="position:absolute;bottom:120%;">Delta Scanner</h2>
+            <div class="col-md-6" style="padding:15px;">
                 <div class="tabBox">
                     <ul class="tabs">
-                        <li><a href="#delta-gallery">Gallery</a></li>
-
+                        <li><a>Gallery</a></li>
                     </ul>
                     <div class="tabContainer">
-                        <div id="delta-gallery" class="tabContent"> </div>
+                        <div class="tabContent">
+                            <ul class="slides">
+                                <input type="radio" name="radio-btn5" id="img-13" checked />
+                                <li class="slide-container">
+                                    <div class="slide">
+                                        <img src="http://s7.postimg.org/a54caq9jf/estimote.jpg" />
+                                    </div>                            
+                                </li>
+                                <input type="radio" name="radio-btn5" id="img-14" />
+                                <li class="slide-container">
+                                    <div class="slide">
+                                        <img src="http://s12.postimg.org/787c334jh/estimotekit.jpg" style="position:absolute;bottom:0%;right:0%;"/>
+                                    </div>                             
+                                </li>
+                                <input type="radio" name="radio-btn5" id="img-15" />
+                                <li class="slide-container">
+                                    <div class="slide">
+                                        <iframe width="548" height="515" src="https://www.youtube.com/embed/wQPpLYcrq5s" 
+                                        style="position:absolute;bottom:0%;right:0%;" frameborder="0" allowfullscreen></iframe>
+                                    </div>                             
+                                </li>
+                                <li class="nav-dots">
+                                    <label for="img-13" class="nav-dot" id="img-dot-13"></label>
+                                    <label for="img-14" class="nav-dot" id="img-dot-14"></label>
+                                    <label for="img-15" class="nav-dot" id="img-dot-15"></label>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div> 
+                </div>   
+            </div>
 
-                <h3 id="rightT" style="color:#6633CC; bottom:108%; right:-6%;">Summary</h3>
-                    
-                <div id="right"style="position:absolute;bottom:80%;">
+            <div class="col-md-6">
+                <h3 class="rT">Summary</h3>
+                <div class="r">
                         Delta Scanner was created at Delta Hacks 2015. It uses the Estimote BLE beacon to allow a user to trigger location-based events.
                         The scanner uses position triangulation to accurately locate a device connected with a Bluetooth LE connection to an android application. With the intent of connecting to a smartphone that is carried around, a coffee maker was automated to turn on under specific time and movement conditions. 
-                        
                 </div>
-                <h3 id="rightT"  STYLE="bottom:65%; right:2%; color:#6633CC;">Tech</h3>
-                <div id="right" style="position:absolute; text-decoration:underline;font-size:175%;bottom:64%;">Components:</div>
-                <p id="right" style="position:absolute; bottom:53%;">Three Estimote BLE beacon • Relays • Coffeemaker</p> 
-                <div id="right" style="position:absolute; text-decoration:underline;font-size:175%;bottom:51%;">Software:</div>
-                <p id="right" style="position:absolute; bottom:40%;">Estimote Android SDK • Bluetooth LE API </p>
 
-
-
-
-                <ul class="slides">
-                    <input type="radio" name="radio-btn5" id="img-13" checked />
-                    <li class="slide-container">
-                        <div class="slide">
-                            <img src="http://s7.postimg.org/a54caq9jf/estimote.jpg" />
-                        </div>                            
-                    </li>
-                    <input type="radio" name="radio-btn5" id="img-14" />
-                    <li class="slide-container">
-                        <div class="slide">
-                            <img src="http://s12.postimg.org/787c334jh/estimotekit.jpg" />
-                        </div>                             
-                    </li>
-                    <input type="radio" name="radio-btn5" id="img-15" />
-                    <li class="slide-container">
-                        <div class="slide">
-                            <iframe width="548" height="515" src="https://www.youtube.com/embed/wQPpLYcrq5s" frameborder="0" allowfullscreen></iframe>
-                        </div>                             
-                    </li>
-                    <li class="nav-dots" style="position:absolute;right:2%;">
-                        <label for="img-13" class="nav-dot" id="img-dot-13"></label>
-                        <label for="img-14" class="nav-dot" id="img-dot-14"></label>
-                        <label for="img-15" class="nav-dot" id="img-dot-15"></label>
-                    </li>
-                        
-                </ul>
-                <a href="#organizations" class="page-scroll">
-                    <p> Organizations section </p>
-                    <i class="fa fa-angle-double-down animated"></i>
-                </a>
+                <h3 class="rT"></br>Tech</h3>
+                <div class="r" style="text-decoration:underline;font-size:175%;">Components:</div>
+                <p class="r">Three Estimote BLE beacon • Relays • Coffeemaker</p> 
+                <div class="r" style="text-decoration:underline;font-size:175%;">Software:</div>
+                <p class="r">Estimote Android SDK • Bluetooth LE API </p> 
             </div>
         </div>
+
+        <a href="#organizations" class="page-scroll">
+            <p> Organizations section </p>
+            <i class="fa fa-angle-double-down animated"></i>
+        </a>
     </section>
+
 
     <!-- Midnight Sun Solar Team Section -->
     <section id="solarcar" class="container content-section text-center">
+        <h2 style="margin-top:-200px">Midnight Sun Solar Rayce Car Suspension Team</h2>
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                
-                <h2 class="col-lg-7 col-lg-offset-2" style="position:absolute;bottom:120%;">Midnight Sun Solar Rayce Car Suspension Team</h2>
+            <div class="col-md-6" style="padding:15px;">
                 <div class="tabBox">
                     <ul class="tabs">
-                        <li><a href="#solar-gallery">Gallery</a></li>
-
+                        <li><a>Gallery</a></li>
                     </ul>
                     <div class="tabContainer">
-                        <div id="solar-gallery" class="tabContent"> </div>
+                        <div class="tabContent">
+                            <ul class="slides">
+                                <input type="radio" name="radio-btn6" id="img-16" checked />
+                                <li class="slide-container">
+                                    <div class="slide">
+                                        <img src="http://s16.postimg.org/s5siw7fgl/solarcar.jpg"/>
+                                    </div>                            
+                                </li>
+                                <input type="radio" name="radio-btn6" id="img-17" />
+                                <li class="slide-container">
+                                    <div class="slide">
+                                        <img src="http://s23.postimg.org/hibrccwfv/car_mold.jpg" style="position:absolute;bottom:0%;right:0%;"/>
+                                    </div>                             
+                                </li>
+                                <input type="radio" name="radio-btn6" id="img-18" />
+                                <li class="slide-container">
+                                    <div class="slide">
+                                        <img src="http://s17.postimg.org/5zri26rvj/car.jpg" style="position:absolute;bottom:0%;right:0%;"/>
+                                    </div>                             
+                                </li>
+                                <input type="radio" name="radio-btn6" id="img-19" />
+                                <li class="slide-container">
+                                    <div class="slide">
+                                        <img src="http://s17.postimg.org/6f7d8y36n/car_view.jpg" style="position:absolute;bottom:0%;right:0%;"/>
+                                    </div>                             
+                                </li>
+                           
+                                <li class="nav-dots" >
+                                        <label for="img-16" class="nav-dot" id="img-dot-16"></label>
+                                        <label for="img-17" class="nav-dot" id="img-dot-17"></label>
+                                        <label for="img-18" class="nav-dot" id="img-dot-18"></label>
+                                        <label for="img-19" class="nav-dot" id="img-dot-19"></label>
+                                </li> 
+                            </ul>
+                        </div>
                     </div>
-                </div> 
+                </div>   
+            </div>
 
-                <h3 id="rightT" style="color:#6633CC; bottom:108%; right:-6%;">Summary</h3>
-                    
-                <div id="right"style="position:absolute;bottom:69%;">
-                        The Midnight Sun Solar Rayce Car Team is the largest student run design team at the University of Waterloo. With mechanical, electrical, and business teams, the team is redesigns and builds a solar car biennially to compete in solar challenges such as the World Solar Challenge (Australia) and the American Solar Challenge (USA). With a completely new design, the MSXI features four wheels, two seats, trunk space, and a body made entirely out of carbon fiber and nomex. This redesign allows for testing of not only the speed of the car, but also its ability to perform in practical environments. 
-                        
+            <div class="col-md-6">
+                <h3 class="rT"></br>Summary</h3>
+                <div class="r">
+                        The Midnight Sun Solar Rayce Car Team is the largest student run design team at the University of Waterloo. With mechanical, electrical, and business teams, the team is redesigns and builds a solar car biennially to compete in solar challenges such as the World Solar Challenge (Australia) and the American Solar Challenge (USA). With a completely new design, the MSXI features four wheels, two seats, trunk space, and a body made entirely out of carbon fiber and nomex. This redesign allows for testing of not only the speed of the car, but also its ability to perform in practical environments.
                 </div>
-                <h3 id="rightT"  STYLE="bottom:56%; right:-27%; color:#6633CC;">Key Responsibilities</h3>
-                <p id="right" style="position:absolute; bottom:39%;">
+
+                <h3 class="rT"></br>Key Responsibilities</h3>
+                <p class="r">
                     • Machining of core components of solar vehicle</br>
                     • Detecting and remodeling of design flaws using SolidWorks</br>
                     • Working to manufacture and assemble suspension systems
                 </p> 
-                
-
-
-                <ul class="slides">
-                    <input type="radio" name="radio-btn6" id="img-16" checked />
-                    <li class="slide-container">
-                        <div class="slide">
-                            <img src="http://s17.postimg.org/kkd6arc7z/solarcar.jpg" />
-                        </div>                            
-                    </li>
-                    <input type="radio" name="radio-btn6" id="img-17" />
-                    <li class="slide-container">
-                        <div class="slide">
-                            <img src="http://s17.postimg.org/4bwy1a3dr/car_mold.jpg" />
-                        </div>                             
-                    </li>
-                    <input type="radio" name="radio-btn6" id="img-18" />
-                    <li class="slide-container">
-                        <div class="slide">
-                            <img src="http://s17.postimg.org/5zri26rvj/car.jpg" />
-                        </div>                             
-                    </li>
-                     <input type="radio" name="radio-btn6" id="img-19" />
-                    <li class="slide-container">
-                        <div class="slide">
-                            <img src="http://s17.postimg.org/6f7d8y36n/car_view.jpg" />
-                        </div>                             
-                    </li>
-                    
-                    <li class="nav-dots" style="position:absolute;right:2%;">
-                        <label for="img-16" class="nav-dot" id="img-dot-16"></label>
-                        <label for="img-17" class="nav-dot" id="img-dot-17"></label>
-                        <label for="img-18" class="nav-dot" id="img-dot-18"></label>
-                        <label for="img-19" class="nav-dot" id="img-dot-19"></label>
-                    </li>
-                        
-                </ul>
-                <a id="right" style="position:absolute; bottom:35%; font-size:175%;" href = "http://www.uwmidsun.com">
+                <a class="r" style="font-size:175%; text-align: left;" href = "http://www.uwmidsun.com">
                     Learn more by visiting our site
                 <a>
-                <a href="#swimteam" class="page-scroll">
-                    <p> Next organization </p>
-                    <i class="fa fa-angle-double-down animated"></i>
-                </a>
             </div>
         </div>
+
+        <a href="#swimteam" class="page-scroll">
+            <p> Next organization </p>
+            <i class="fa fa-angle-double-down animated"></i>
+        </a>
     </section>
 
+
+
 <!-- Varsity Swim Team Section -->
-    <section id="swimteam" class="container content-section text-center">
+<section id="swimteam" class="container content-section text-center">
+        <h2 style="margin-top:-200px">Varsity Swim Team</h2>
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                
-                <h2 class="col-lg-7 col-lg-offset-2" style="position:absolute;bottom:120%;">Varsity Swim Team</h2>
+            <div class="col-md-6" style="padding:15px;">
                 <div class="tabBox">
                     <ul class="tabs">
-                        <li><a href="#swim-gallery">Gallery</a></li>
-
+                        <li><a>Gallery</a></li>
                     </ul>
                     <div class="tabContainer">
-                        <div id="swim-gallery" class="tabContent"> </div>
+                        <div class="tabContent">
+                            <ul class="slides">
+                                <input type="radio" name="radio-btn7" id="img-20" checked />
+                                <li class="slide-container">
+                                    <div class="slide">
+                                        <img src="http://s16.postimg.org/6spruvvgl/dive.jpg"/>
+                                    </div>                            
+                                </li>
+                                <input type="radio" name="radio-btn7" id="img-21" />
+                                <li class="slide-container">
+                                    <div class="slide">
+                                        <img src="http://s2.postimg.org/z7cgfof3d/calgary.jpg" style="position:absolute;bottom:0%;right:0%;"/>
+                                    </div>                             
+                                </li>
+                                <input type="radio" name="radio-btn7" id="img-22" />
+                                <li class="slide-container">
+                                    <div class="slide">
+                                        <img src="http://s16.postimg.org/p9k6lpbet/team_photo.jpg" style="position:absolute;bottom:0%;right:0%;"/>
+                                    </div>                             
+                                </li>
+                           
+                                <li class="nav-dots" >
+                                        <label for="img-20" class="nav-dot" id="img-dot-20"></label>
+                                        <label for="img-21" class="nav-dot" id="img-dot-21"></label>
+                                        <label for="img-22" class="nav-dot" id="img-dot-22"></label>
+                                </li> 
+                            </ul>
+                        </div>
                     </div>
-                </div> 
+                </div>   
+            </div>
 
-                <h3 id="rightT" style="color:#6633CC; bottom:108%; right:-23%;">Accomplishments</h3>
-                    
-                <div id="right"style="position:absolute;bottom:60%;">
+            <div class="col-md-6">
+                <h3 class="rT"></br>Accomplishments</h3>
+                <div class="r">
                     • 2015 Academic All-Canadian</br></br>
                     • Tihanyi Divisional Champions</br></br>
                     • OUA Championships 6th Place</br></br>
                     • Rookie of the Year</br></br>
                     • Team record holder</br></br>
                     • Freshman record holder
+                </div>
+            </div>
+        </div>
 
+        <a href="#courses" class="page-scroll">
+            <p> View Courses </p>
+            <i class="fa fa-angle-double-down animated"></i>
+        </a>
+    </section>
 
-                </div> 
-
-                 <ul class="slides">
-                   
-                    <input type="radio" name="radio-btn7" id="img-20" checked />
-                    <li class="slide-container">
-                        <div class="slide">
-                            <img src="http://s16.postimg.org/6spruvvgl/dive.jpg" />
-                        </div>                             
-                    </li>
-                     <input type="radio" name="radio-btn7" id="img-21" />
-                    <li class="slide-container">
-                        <div class="slide">
-                            <img src="http://s2.postimg.org/z7cgfof3d/calgary.jpg" />
-                        </div>                             
-                    </li>
-                    <input type="radio" name="radio-btn7" id="img-22" />
-                    <li class="slide-container">
-                        <div class="slide">
-                            <img src="http://s16.postimg.org/p9k6lpbet/team_photo.jpg" />
-                        </div>                             
-                    </li>
-                    
-                    <li class="nav-dots" style="position:absolute;right:2%;">
-                        <label for="img-20" class="nav-dot" id="img-dot-20"></label>
-                        <label for="img-21" class="nav-dot" id="img-dot-21"></label>
-                        <label for="img-22" class="nav-dot" id="img-dot-22"></label>
-                    </li>
-                </ul>
-
-                <a id="right" style="position:absolute; bottom:35%; font-size:175%;" href = "http://www.varsity.uwaterloo.ca/roster.aspx?rp_id=3404&path=mswim">
-                    View full bio
-                <a>
-
+    <!-- Courses Section -->
+     <section id="courses" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2 class="col-lg-7 col-lg-offset-2" style="position:absolute;bottom:145%;"></br>Courses</h2>
+               
                 <a href="#contacts" class="page-scroll">
                     <p> Contacts </p>
                     <i class="fa fa-angle-double-down animated"></i>
@@ -704,7 +739,7 @@
     </section>
 
     <!-- Contact Section -->
-     <section id="contacts" class="container content-section text-center">
+     <section id="contacts" class="container content-section text-center" >
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2 class="col-lg-7 col-lg-offset-2" style="position:absolute;bottom:120%;">Contacts</h2>

@@ -26,9 +26,9 @@ padding: 0;
 height: 4vh;/*150%*/ 
 line-height: 4vh;
 overflow: hidden;
-position: relative;
-bottom:19vh;
-right: 16.4%;/*10.35vw*/
+margin-left:5%;
+
+
 
 }
   
@@ -45,16 +45,15 @@ border-top: none;
 overflow: hidden;
 clear: both;
 float: left;
-width:60%;
+width:90%;
 min-height:31vh;
-margin-bottom:2.2vh;
-position: relative;
-bottom:19vh;
-right: 16.3%;
+margin-left:5%;
+
+
 }
   
 .tabContent {
-padding: 1vh;
+
 }
   
 .tabContent h3 {
@@ -84,25 +83,25 @@ background: black;
 text-decoration: none;
 font-size: 135%;
 font-family: Papyrus;
-color: white;
+color: #FF5A09;
 outline: none;
 border: 1px solid #ccc;
 margin-right: 0.2vw;
 padding-left: 15%;
-padding-right: 15%;
-padding-bottom: 15%;
+padding-right: 20%;
+padding-bottom: 15px;;
 
 }
   
 ul.tabs li a:hover {
-/*background: #eee;*/
+
 }
   
 ul.tabs li.active {
   color: black;
   font-weight: bold;
   display: inline;
-  position: relative;
+
   cursor: pointer;
   border-bottom:none;
 
@@ -123,7 +122,7 @@ border-top:2px solid #ccc;
 background: black;
 color: white;
 opacity: 0.9;
-min-height:75vh;
+min-height:85vh;
 }
 
 @media only screen and (max-width: 767px) {
@@ -160,8 +159,8 @@ html, body { background: #333 url("http://codepen.io/images/classy_fabric.png");
 
 .slides {
     padding: 0;
-    width: 64.32%;
-    height: 67.76%;
+    max-width: 85.85%;
+    height: auto;
     display: block;
     margin: 0 auto;
     position: absolute;
@@ -185,29 +184,23 @@ html, body { background: #333 url("http://codepen.io/images/classy_fabric.png");
     opacity: 0;
     width: 100.0%;
     height: 100%;
-    display: block;
-    position:absolute;
-    right:29.4%;
-    top:-23.725%;
     transition: all 0.2s ease-in-out;
 }
 
 .slide img {
-    width: 89.75%;
-    height: 100%;
+    width: 100%;
+    height:auto;
+	
 }
 
 .nav label {
     width: 25.1vh;
     height: 100%;
     display: none;
-    /*position:absolute;*/
-    position:relative;
-    right:55%;
-    top:-28.4%;
     opacity: 0;
     z-index: 9;
     cursor: pointer;
+
 
     transition: opacity .4s;
 
@@ -306,7 +299,7 @@ background-color:DarkSeaGreen;
 
 input#img-20:checked ~ .nav-dots label#img-dot-20,
 input#img-21:checked ~ .nav-dots label#img-dot-21,
-input#img-21:checked ~ .nav-dots label#img-dot-22
+input#img-22:checked ~ .nav-dots label#img-dot-22
 {
 background-color:DarkSeaGreen;
 }

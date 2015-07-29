@@ -159,7 +159,7 @@ html, body { background: #333 url("http://codepen.io/images/classy_fabric.png");
 
 .slides {
     padding: 0;
-    max-width: 85.85%;
+    max-width: 85.6%;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -188,6 +188,7 @@ html, body { background: #333 url("http://codepen.io/images/classy_fabric.png");
 }
 
 .slide img {
+    zoom: 2;
     width: 100%;
     height:auto;
 	

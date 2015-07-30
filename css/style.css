@@ -187,6 +187,13 @@ html, body { background: #333 url("http://codepen.io/images/classy_fabric.png");
     transition: all 0.2s ease-in-out;
 }
 
+.slide iframe {
+    zoom: 2;
+    width: 100%;
+    height:auto;
+	
+}
+
 .slide img {
     zoom: 2;
     width: 100%;
@@ -240,10 +247,9 @@ input:checked + .slide-container .nav label { display: block; }
 .nav-dots .nav-dot {
 	width: 11px;
 	height: 11px;
-	margin: 0 4px;
-	position: relative;
-        right:28%;
-    	top:-625%;
+	margin-top: 10%;
+	margin-right: 2%;
+	text-align:center;
 	border-radius: 100%;
 	display: inline-block;
 	background-color: white;

@@ -1,55 +1,49 @@
 
 div.tabBox {
-width:99.9%;
-float:left;
-overflow: visible;
+    width:99.9%;
+    float:left;
+    overflow: visible;
 }
   
 div.tabBox h3 {
-padding:20px 0px;
+    
 }
   
 ul.tabs {
-margin: 0;
-padding: 0;
-float: left;
-list-style: none;
-height: 5%; 
-width:99.9%;
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style: none;
+    height: 5%; 
+    width:99.9%;
 }
   
 ul.tabs li {
-border-radius: 1px;
-float: left;
-margin: 0;
-padding: 0;
-height: 4vh;/*150%*/ 
-line-height: 4vh;
-overflow: hidden;
-margin-left:5%;
-
-
-
+    border-radius: 1px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    height: 4vh;/*150%*/ 
+    line-height: 4vh;
+    overflow: hidden;
+    margin-left:5%;
 }
   
 ul.tabs li a {
-display: block;
-padding: 0 5px;
-outline: none;
-background:none;
+    display: block;
+    padding: 0 5px;
+    outline: none;
+    background:none;
 }
   
 .tabContainer {
-background:white;
-border-top: none;
-overflow: hidden;
-clear: both;
-float: left;
-width:90%;
-min-height:31vh;
-margin-left:5%;
-
-
+    background:white;
+    border-top: none;
+    overflow: hidden;
+    clear: both;
+    float: left;
+    width:90%;
+    margin-left:5%;
 }
   
 .tabContent {
@@ -57,7 +51,7 @@ margin-left:5%;
 }
   
 .tabContent h3 {
-padding:0px;
+    padding:0px;
 }
   
 /**** TABS STYLES ****/
@@ -79,18 +73,17 @@ ul.tabs li {
 }
   
 ul.tabs li a {
-background: black;
-text-decoration: none;
-font-size: 135%;
-font-family: Papyrus;
-color: #FF5A09;
-outline: none;
-border: 1px solid #ccc;
-margin-right: 0.2vw;
-padding-left: 15%;
-padding-right: 20%;
-padding-bottom: 15px;;
-
+    background: black;
+    text-decoration: none;
+    font-size: 135%;
+    font-family: Papyrus;
+    color: #FF5A09;
+    outline: none;
+    border: 1px solid #ccc;
+    margin-right: 0.2vw;
+    padding-left: 15%;
+    padding-right: 20%;
+    padding-bottom: 15px;;
 }
   
 ul.tabs li a:hover {
@@ -104,8 +97,6 @@ ul.tabs li.active {
 
   cursor: pointer;
   border-bottom:none;
-
-  
 }
 
   
@@ -115,14 +106,14 @@ ul.tabs li.active a, ul.tabs li.active a:hover  {
 }
   
 div.tabContainer {
-border-bottom:1px solid #ccc;
-border-left:1px solid #ccc;
-border-right:1px solid #ccc;
-border-top:2px solid #ccc;
-background: black;
-color: white;
-opacity: 0.9;
-min-height:85vh;
+    border-bottom:1px solid #ccc;
+    border-left:1px solid #ccc;
+    border-right:1px solid #ccc;
+    border-top:2px solid #ccc;
+    background: black;
+    color: white;
+    opacity: 0.9;
+    min-height:82vh;
 }
 
 @media only screen and (max-width: 767px) {
@@ -132,22 +123,22 @@ border: 1px solid #000;
 }
  
 ul.tabs {
-height: auto;
-display: block;
-width:100%;
-border-left:0px;
+    height: auto;
+    display: block;
+    width:100%;
+    border-left:0px;
 }
      
 ul.tabs li {
-width:100%;
+    
 }
  
 ul.tabs li a {
-border:0px;
+    border:0px;
 }
      
 div.tabContainer {
-border: 0px;
+    border: 0px;
 }
      
 }
@@ -159,7 +150,7 @@ html, body { background: #333 url("http://codepen.io/images/classy_fabric.png");
 
 .slides {
     padding: 0;
-    max-width: 85.6%;
+    width: 85.73%;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -188,14 +179,14 @@ html, body { background: #333 url("http://codepen.io/images/classy_fabric.png");
 }
 
 .slide iframe {
-    zoom: 2;
+    zoom:2.5;
     width: 100%;
     height:auto;
 	
 }
 
 .slide img {
-    zoom: 2;
+    
     width: 100%;
     height:auto;
 	
@@ -208,10 +199,7 @@ html, body { background: #333 url("http://codepen.io/images/classy_fabric.png");
     opacity: 0;
     z-index: 9;
     cursor: pointer;
-
-
     transition: opacity .4s;
-
     color: #FFF;
     font-size: 156pt;
     text-align: center;
@@ -237,7 +225,7 @@ input:checked + .slide-container .nav label { display: block; }
 
 .nav-dots {
 	width: 100%;
-	bottom: -5px;
+	bottom: -7px;
 	height: 11px;
 	display: block;
 	position: absolute;
@@ -247,7 +235,7 @@ input:checked + .slide-container .nav label { display: block; }
 .nav-dots .nav-dot {
 	width: 11px;
 	height: 11px;
-	margin-top: 10%;
+	margin-top: 8%;
 	margin-right: 2%;
 	text-align:center;
 	border-radius: 100%;
@@ -275,38 +263,40 @@ background-color:DarkSeaGreen;
 }
 
 input#img-7:checked ~ .nav-dots label#img-dot-7,
-input#img-8:checked ~ .nav-dots label#img-dot-8
-{
-background-color:DarkSeaGreen;
-}
-
+input#img-8:checked ~ .nav-dots label#img-dot-8,
 input#img-9:checked ~ .nav-dots label#img-dot-9,
-input#img-10:checked ~ .nav-dots label#img-dot-10,
+input#img-10:checked ~ .nav-dots label#img-dot-10
+{
+background-color:DarkSeaGreen;
+}
+
 input#img-11:checked ~ .nav-dots label#img-dot-11,
-input#img-12:checked ~ .nav-dots label#img-dot-12
-{
-background-color:DarkSeaGreen;
-}
-
+input#img-12:checked ~ .nav-dots label#img-dot-12,
 input#img-13:checked ~ .nav-dots label#img-dot-13,
-input#img-14:checked ~ .nav-dots label#img-dot-14,
-input#img-15:checked ~ .nav-dots label#img-dot-15
+input#img-14:checked ~ .nav-dots label#img-dot-14
 {
 background-color:DarkSeaGreen;
 }
-
+input#img-15:checked ~ .nav-dots label#img-dot-15,
 input#img-16:checked ~ .nav-dots label#img-dot-16,
-input#img-17:checked ~ .nav-dots label#img-dot-17,
+input#img-17:checked ~ .nav-dots label#img-dot-17
+
+{
+background-color:DarkSeaGreen;
+}
+
 input#img-18:checked ~ .nav-dots label#img-dot-18,
-input#img-19:checked ~ .nav-dots label#img-dot-19
+input#img-19:checked ~ .nav-dots label#img-dot-19,
+input#img-20:checked ~ .nav-dots label#img-dot-20,
+input#img-21:checked ~ .nav-dots label#img-dot-21
 {
 background-color:DarkSeaGreen;
 }
 
 
-input#img-20:checked ~ .nav-dots label#img-dot-20,
-input#img-21:checked ~ .nav-dots label#img-dot-21,
-input#img-22:checked ~ .nav-dots label#img-dot-22
+input#img-22:checked ~ .nav-dots label#img-dot-22,
+input#img-23:checked ~ .nav-dots label#img-dot-23,
+input#img-24:checked ~ .nav-dots label#img-dot-24
 {
 background-color:DarkSeaGreen;
 }

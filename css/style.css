@@ -114,7 +114,7 @@ div.tabContainer {
     background-color: transparent;
     color: white;
     opacity: 0.9;
-    min-height:82vh;
+    min-height:70vh;
 }
 
 @media only screen and (max-width: 767px) {

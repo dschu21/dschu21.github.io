@@ -106,11 +106,12 @@ ul.tabs li.active a, ul.tabs li.active a:hover  {
 }
   
 div.tabContainer {
-    border-bottom:1px solid #ccc;
+    /*border-bottom:1px solid #ccc;
     border-left:1px solid #ccc;
     border-right:1px solid #ccc;
     border-top:2px solid #ccc;
-    background: black;
+    background: black;*/
+    background-color: transparent;
     color: white;
     opacity: 0.9;
     min-height:82vh;
@@ -155,6 +156,10 @@ html, body { background: #333 url("http://codepen.io/images/classy_fabric.png");
     display: block;
     margin: 0 auto;
     position: absolute;
+    border-bottom:2px solid #ccc;
+    border-left:2px solid #ccc;
+    border-right:2px solid #ccc;
+    border-top:3px solid #ccc;
 }
 
 .slides * {
@@ -233,8 +238,8 @@ input:checked + .slide-container .nav label { display: block; }
 }
 
 .nav-dots .nav-dot {
-	width: 11px;
-	height: 11px;
+	width: 15px;
+	height: 15px;
 	margin-top: 8%;
 	margin-right: 2%;
 	text-align:center;
@@ -264,39 +269,41 @@ background-color:DarkSeaGreen;
 
 input#img-7:checked ~ .nav-dots label#img-dot-7,
 input#img-8:checked ~ .nav-dots label#img-dot-8,
-input#img-9:checked ~ .nav-dots label#img-dot-9,
-input#img-10:checked ~ .nav-dots label#img-dot-10
+input#img-9:checked ~ .nav-dots label#img-dot-9
+
 {
 background-color:DarkSeaGreen;
 }
 
+input#img-10:checked ~ .nav-dots label#img-dot-10,
 input#img-11:checked ~ .nav-dots label#img-dot-11,
 input#img-12:checked ~ .nav-dots label#img-dot-12,
-input#img-13:checked ~ .nav-dots label#img-dot-13,
-input#img-14:checked ~ .nav-dots label#img-dot-14
+input#img-13:checked ~ .nav-dots label#img-dot-13
+
 {
 background-color:DarkSeaGreen;
 }
+input#img-14:checked ~ .nav-dots label#img-dot-14,
 input#img-15:checked ~ .nav-dots label#img-dot-15,
-input#img-16:checked ~ .nav-dots label#img-dot-16,
-input#img-17:checked ~ .nav-dots label#img-dot-17
+input#img-16:checked ~ .nav-dots label#img-dot-16
 
 {
 background-color:DarkSeaGreen;
 }
 
+
+input#img-17:checked ~ .nav-dots label#img-dot-17,
 input#img-18:checked ~ .nav-dots label#img-dot-18,
 input#img-19:checked ~ .nav-dots label#img-dot-19,
-input#img-20:checked ~ .nav-dots label#img-dot-20,
-input#img-21:checked ~ .nav-dots label#img-dot-21
+input#img-20:checked ~ .nav-dots label#img-dot-20
 {
 background-color:DarkSeaGreen;
 }
 
 
+input#img-21:checked ~ .nav-dots label#img-dot-21,
 input#img-22:checked ~ .nav-dots label#img-dot-22,
-input#img-23:checked ~ .nav-dots label#img-dot-23,
-input#img-24:checked ~ .nav-dots label#img-dot-24
+input#img-23:checked ~ .nav-dots label#img-dot-23
 {
 background-color:DarkSeaGreen;
 }

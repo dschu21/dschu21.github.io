@@ -79,7 +79,7 @@ a:focus {
 }
 
 .navbar-custom .navbar-brand .navbar-toggle {
-    padding: 4px 6px;
+    padding: 3px 5px;
     font-size: 16px;
     color: #fff;
 }
@@ -101,14 +101,13 @@ a:focus {
 
 .navbar-custom .nav li a:hover {
     outline: 0;
-    color: rgba(255,255,255,.8);
+    color: rgba(255,255,255,.7);
     background-color: transparent;
 }
 
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a:active {
     outline: 0;
-    background-color: transparent;
 }
 
 .navbar-custom .nav li.active {
@@ -116,7 +115,7 @@ a:focus {
 }
 
 .navbar-custom .nav li.active a {
-    background-color: rgba(255,255,255,.3);
+    background-color: rgba(255,255,255,.2);
 }
 
 .navbar-custom .nav li.active a:hover {
@@ -319,6 +318,21 @@ a:focus {
     outline: 0;
     color: #000;
     background-color: #00A5A5;
+}
+
+.img-circle {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 125px;
+    height: 125px;
+    border: 3px solid rgba(255,255,255,0.9);
+    border-radius: 50%!important;
+    color: #fff;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
 }
 
 ul.banner-social-buttons {

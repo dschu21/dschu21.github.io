@@ -307,3 +307,11 @@ input#img-23:checked ~ .nav-dots label#img-dot-23
 {
 background-color:DarkSeaGreen;
 }
+
+.circlular {
+    height: 6vw;
+    margin-top: 20px;
+    border-radius: 1500px;
+    border: 3px solid rgba(255,255,255,0.9);
+    
+}

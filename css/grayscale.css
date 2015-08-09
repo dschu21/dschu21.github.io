@@ -32,14 +32,15 @@ h6 {
 
 p {
     margin: 0 0 25px;
-    font-size: 18px;
+    font-size: 21px;
     line-height: 1.5;
+    font-family:'Fjalla One', sans-serif;
 }
 
 @media(min-width:768px) {
     p {
-        margin: 0 0 35px;
-        font-size: 20px;
+        margin: 0 0 15px;
+        font-size: 21px;
         line-height: 1.6;
     }
 }

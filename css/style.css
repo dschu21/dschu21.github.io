@@ -114,13 +114,13 @@ div.tabContainer {
     background-color: transparent;
     color: white;
     opacity: 0.9;
-    min-height:70vh;
+    min-height:75vh;
 }
 
 @media only screen and (max-width: 767px) {
  
 div.tabBox {
-border: 1px solid #000;
+/*border: 1px solid #000;*/
 }
  
 ul.tabs {

@@ -240,7 +240,7 @@ input:checked + .slide-container .nav label { display: block; }
 .nav-dots .nav-dot {
 	width: 15px;
 	height: 15px;
-	margin-top: 8%;
+	margin-top: 6%;
 	margin-right: 2%;
 	text-align:center;
 	border-radius: 100%;
